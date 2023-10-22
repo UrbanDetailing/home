@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,19 +49,22 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #444;
             color: #fff;
             text-align: center;
-            padding: 1em;
+            padding: 0.1em;
             position: fixed;
             bottom: 0;
             width: 100%;
-            transition: background-color 0.5s ease;
-            height: 4%
         }
 
-        footer:hover {
-            background-color: #555;
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            background-color: #ddd;
         }
 
         .container {
@@ -78,7 +82,8 @@
             margin-bottom: 10px;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
@@ -97,8 +102,56 @@
         button:hover {
             background-color: #45a049;
         }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        @media (max-width: 1080px) {
+            img {
+                max-width: 40%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            footer {
+                background-color: #444;
+                color: #fff;
+                text-align: center;
+                padding: 0.1em;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                font-size: 15px;
+            }
+
+            footer a:hover {
+                background-color: #ddd;
+            }
+
+            .social-links {
+                margin-top: 10px;
+            }
+
+            .social-links a {
+                display: inline-block;
+                margin-right: 10px;
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <nav>
@@ -128,8 +181,16 @@
     </section>
 
     <footer>
+        <div class="social-links">
+            <a href="https://facebook.com/urbandetailing0" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/@Urbanboyvlogs" target="_blank">YouTube</a>
+            <a href="https://instagram.com/_urban__detailing" target="_blank">Instagram</a>
+            <a href="https://maps.app.goo.gl/vFL9coYESFvKRbfF8" target="_blank">Maps</a>
+            <!-- Add more social media links as needed -->
+        </div>
         <p>&copy; 2023 Urban Detailing. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>
