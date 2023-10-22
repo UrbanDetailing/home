@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Detailing</title>
+    <title>Urban Detailing - Services</title>
     <link rel="icon" type="image/x-icon" href="ico.ico">
     <style>
         /* Your CSS styles go here */
@@ -40,6 +41,13 @@
             padding: 2em;
         }
 
+        li{
+            font-weight: bold;
+        }
+        p{
+            font-weight: normal;
+        }
+
         footer {
             background-color: #444;
             color: #fff;
@@ -59,38 +67,20 @@
             margin: 0 auto;
         }
 
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
+        .service-list {
+            list-style-type: none;
+            padding: 0;
         }
 
-        label {
-            display: block;
-            margin-bottom: 10px;
+        .service-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
         }
 
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
 
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .containers {
-            height: 2000px;
+        .service-description {
+            font-style: italic;
+            color: #555;
         }
 
         .social-links {
@@ -105,6 +95,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="containers">
         <nav>
@@ -113,29 +104,40 @@
             <a href="#pricing">Pricing</a>
             <a href="contact.html">Contact</a>
         </nav>
-        
-        <section class="container">
-            <h2>Welcome to Urban Detailing!</h2>
 
-            <!-- Adding the image -->
-            <img src="ppfimage.png" alt="PPF Image" style="max-width: 10%; height: auto; margin-bottom: 20px;">
-            
-            <p>Transform your car into a masterpiece with our expert car detailing and paint protection film services.</p>
-            
-            <!-- Add more content as needed -->
-            
-            <h3>Our Services</h3>
-            <ul>
-                <li>Car Detailing</li>
-                <li>Paint Protection Film (PPF) Installation</li>
+        <section class="container">
+            <h2>Our Services</h2>
+
+            <ul class="service-list">
+                <li class="service-item">
+                    Paint Protection Film
+                    <p class="service-description">Protect your car's paint with a transparent film that acts as a shield against stone chips, bug splatter, and other road debris.</p>
+                </li>
+                <li class="service-item">
+                    All Types of Coating
+                    <p class="service-description">Choose from a variety of coatings to enhance the appearance of your car, providing gloss, depth, and protection.</p>
+                </li>
+                <li class="service-item">
+                    Wrapping
+                    <p class="service-description">Transform the look of your vehicle with high-quality vinyl wraps, available in a range of colors and finishes.</p>
+                </li>
+                <li class="service-item">
+                    Body Polish
+                    <p class="service-description">Achieve a showroom shine with our professional body polishing service, restoring and enhancing your car's paint.</p>
+                </li>
+                <li class="service-item">
+                    Car Wash
+                    <p class="service-description">Treat your car to a thorough cleaning, including exterior wash, interior vacuuming, and detailing for a fresh and clean look.</p>
+                </li>
+                <li class="service-item">
+                    Tyres and Batteries
+                    <p class="service-description">Ensure your vehicle's safety and performance with our tire services and battery checks.</p>
+                </li>
                 <!-- Add more services -->
             </ul>
-            
-            <h3>Contact Us</h3>
-            <p>Visit us at Sector 71, Gurugram, Haryana or call us at 9999525297.</p>
         </section>
     </div>
-    
+
     <footer>
         <div class="social-links">
             <a href="https://facebook.com/urbandetailing0" target="_blank">Facebook</a>
@@ -147,4 +149,5 @@
         <p>&copy; 2023 Urban Detailing. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
